@@ -1,0 +1,69 @@
+body {
+	margin:3rem;
+	background-image: linear-gradient(45deg, #92ded0, #7d9bcd, #afe7f6);
+	height:calc(100vh - 6rem);
+}
+
+* {
+	font-family: "courier new";
+	color: #393847;
+}
+
+#calculator {
+	display: grid;
+	width: min-content;
+	grid-template-columns: repeat(4,70px);
+	gap: 10px;
+    background-color: #3be1ab36;
+    background-image: linear-gradient(45deg, transparent, #ffffffdb, transparent);
+	padding:20px;
+    border-radius: 5px;
+    box-shadow: inset 5px 5px rgba(236,234,235,.6), inset -5px -5px rgba(180,180,180,.6);
+}
+
+
+button, #display {
+	width:100%;
+	height:70px;
+	border:0;
+	box-sizing: border-box;
+}
+
+#display {
+	grid-column: span 4;
+	background:#c8f5c38a;
+	padding:10px;
+	font-size: 2rem;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+    box-shadow: inset 5px 5px rgba(180,180,180,.6), inset -5px -5px rgba(236,234,235,.6);
+}
+
+button {
+	background-color: #F0EEED;
+	font-size: 1.8em;
+	text-shadow: 1px 1px rgba(250,250,250,.6);
+    box-shadow: inset 5px 5px rgba(236,234,235,.6), inset -5px -5px rgba(180,180,180,.6);
+    border-radius: 5px;
+}
+
+button:active {
+    box-shadow: inset 5px 5px rgba(180,180,180,.6), inset -5px -5px rgba(236,234,235,.6);
+}
+
+#zero {
+	grid-column: span 2;
+}
+
+.operator {
+	background-color:#FFDA6B;
+}
+
+.other {
+	background-color:#FFAD85;
+}
+
+#equals {
+    background-color: #87bdff;
+}
