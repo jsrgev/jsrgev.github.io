@@ -8,30 +8,32 @@
     </style>
   </head>
   <body>
-    <div id="calculator">
-        <div id="display">
-            0
+    <main>
+        <div id="calculator">
+            <div id="display">
+                0
+            </div>
+            <button type="button" name="button" class="other" onclick="clearAll();">AC</button>
+            <button type="button" name="button" class="other" onclick="sign();">±</button>
+            <button type="button" name="button" class="other" onclick="percent();">%</button>
+            <button type="button" name="button" class="operator" onclick="operator('/');">÷</button>
+            <button type="button" name="button" onclick="number(7);">7</button>
+            <button type="button" name="button" onclick="number(8);">8</button>
+            <button type="button" name="button" onclick="number(9);">9</button>
+            <button type="button" name="button" class="operator" onclick="operator('*');">×</button>
+            <button type="button" name="button" onclick="number(4);">4</button>
+            <button type="button" name="button" onclick="number(5);">5</button>
+            <button type="button" name="button" onclick="number(6);">6</button>
+            <button type="button" name="button" class="operator" onclick="operator('-');">-</button>
+            <button type="button" name="button" onclick="number(1);">1</button>
+            <button type="button" name="button" onclick="number(2);">2</button>
+            <button type="button" name="button" onclick="number(3);">3</button>
+            <button type="button" name="button" class="operator" onclick="operator('+');">+</button>
+            <button type="button" name="button" id="zero" onclick="number(0);">0</button>
+            <button type="button" name="button" onclick="number('.');">.</button>
+            <button type="button" name="button" id="equals" class="operator" onclick="equal();">=</button>
+            <script src="main.js" charset="utf-8"></script>
         </div>
-        <button type="button" name="button" class="other" onclick="clearAll();">AC</button>
-        <button type="button" name="button" class="other" onclick="sign();">±</button>
-        <button type="button" name="button" class="other" onclick="percent();">%</button>
-        <button type="button" name="button" class="operator" onclick="operator('/');">÷</button>
-        <button type="button" name="button" onclick="number(7);">7</button>
-        <button type="button" name="button" onclick="number(8);">8</button>
-        <button type="button" name="button" onclick="number(9);">9</button>
-        <button type="button" name="button" class="operator" onclick="operator('*');">×</button>
-        <button type="button" name="button" onclick="number(4);">4</button>
-        <button type="button" name="button" onclick="number(5);">5</button>
-        <button type="button" name="button" onclick="number(6);">6</button>
-        <button type="button" name="button" class="operator" onclick="operator('-');">-</button>
-        <button type="button" name="button" onclick="number(1);">1</button>
-        <button type="button" name="button" onclick="number(2);">2</button>
-        <button type="button" name="button" onclick="number(3);">3</button>
-        <button type="button" name="button" class="operator" onclick="operator('+');">+</button>
-        <button type="button" name="button" id="zero" onclick="number(0);">0</button>
-        <button type="button" name="button" onclick="number('.');">.</button>
-        <button type="button" name="button" id="equals" class="operator" onclick="equal();">=</button>
-        <script src="main.js" charset="utf-8"></script>
-    </div>
+    </main>
   </body>
 </html>
