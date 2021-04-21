@@ -27,7 +27,7 @@ let stories =
 	`<p>I was waiting outside the post office one day when ${name} came over to me and asked, "Do you know who that ${adjective1} ${noun} across the street belongs to? I'd like to take it with me back to my ${adjective2} house in ${place}."</p><p>"Go back to your ${verb}," I answered, "that ${noun} is staying right where it is.`,
 	`<p>Last year my friends and I went to ${place} to celebrate my birthday. One friend gave me a ${adjective2} ${noun}. Another gave me a ${adjective1} ${noun}. Since I had two, I gave the ${adjective1} one to ${name}, who couldn't stop ${verb} from excitement.</p>`,
 	`<p>${name} awoke from a terrible nightmare. In the dream, there was a ${noun}, and then another, and another - each more ${adjective2} than the last, all ${verb} in a row. "Now you're coming with us to ${place}!" they shouted.</p><p>"But how could I go there?!" ${name} cried. "It's too ${adjective1}!</p>`,
-	`<p>I wasn't feeling well, so I went to the doctor to get checked out. After the examination, she said "I'm afraid it's your ${noun}. It's far too ${adjective2}. But this condition isn't uncommon in people who come back from ${place}. ${name} had the same thing just last week. I recommend a lot of ${verb} until you feel more ${adjective1}."</p>`]
+	`<p>I was feeling extremely ${adjective2}, so I went to the doctor to get checked out. After doing an x-ray, she said "I'm afraid you've swalled a ${noun}. It's not uncommon in people who come back from ${place}. ${name} had the same thing just last week. I recommend a lot of ${verb} until you feel more ${adjective1}."</p>`]
 
 	let randomNum;
 	do {
