@@ -5,12 +5,12 @@ button.addEventListener("click",generate);
 let previousRandom = "";
 
 function generate() {
-	// for (input of inputs) {
-	// 	if (input.value == "") { 
-	// 		alert("Please fill in all the words!");
-	// 		return;
-	// 	}
-	// }
+	for (input of inputs) {
+		if (input.value == "") { 
+			alert("Please fill in all the words!");
+			return;
+		}
+	}
 	let span = document.querySelector("#story");
 	span.textContent="";
 
