@@ -19,7 +19,7 @@ function tidy(string) {
 	if (/e/.test(string) ||     //exponential
 		(length > 14 && (decPlace < 1 || decPlace > 14))) {
 		//if longer than 14, and either there's no decimal or decimal is past 14
-		return "TOO LARGE";
+		return "TOO LONG";
 	} else {
 		if (length > 14 && decPlace > -1) {
 			//if it's longer than 14, and there's a decimal
@@ -30,7 +30,8 @@ function tidy(string) {
 			string = string.toFixed(roundTo); //round so only 14 chars total
 			length = string.toString().length;
 			while (string.toString()[length-1] == 0 || string.toString()[length-1] == ".") {
-				string = string.substr(0,length);
+				string = string.substr(0,length-1);
+				length = string.toString().length;
 				//get rid of trailing 0s after ".", or final ".""
 			}
 			return string;
