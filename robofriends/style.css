@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
-@import url('http://fonts.cdnfonts.com/css/sega-logo-font');
+@import url('https://fonts.cdnfonts.com/css/sega-logo-font');
 
 html {
 	font-size:16px;
@@ -76,5 +76,8 @@ p {
     margin-bottom: 0;
 }
 
-
+/* to hide extra div that some chrome extension may append at the bottom */
+#lo-engage-ext-container {
+	display: none;
+}
 
