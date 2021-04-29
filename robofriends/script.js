@@ -91,12 +91,9 @@ const createDiv = (robot) => {
 	main.appendChild(div);
 }
 
-// let currentMatches = [];
-
 const createAll = () => {
 	for (robot of robots) {
 		createDiv(robot);
-		// currentMatches.push(robot.id);
 	}
 }
 
