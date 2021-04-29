@@ -102,25 +102,32 @@ const createAll = () => {
 
 createAll();
 
-let allDivs;
-const filter = () => {
+const deleteAll = () => {
+	let allDivs = document.querySelectorAll("div");
+	for (div of allDivs) {
+		div.remove();
+	}
+}
+
+const intializeFilter = () => {
 	if (input == "") {
 		createAll();
 		return;
 	}
-	allDivs = document.querySelectorAll("div");
-	for (div of allDivs) {
-		div.remove();
-	}
+	deleteAll();
+	filter();
+}
+
+const filter = () => {
 	let inputArray = input.value.trim().split(" "); //segments input if there are spaces
 	for (robot of robots) {
-		let matches = 0;	// track how many segments of input produce a match
+		let matches = 0;	// to count how many segments of input produce a match
 		for (segment of inputArray) {
 			let nameArray = robot.name.split(" "); 
 			for (partOfName of nameArray) { //any part of name (title, first, last) can produce a match
 				if (partOfName.toLowerCase().search(segment.toLowerCase()) === 0) {
 					matches++;
-					break; // so points don't accumulate if multiple parts of name happen to both match same segment
+					break; // so points don't accumulate if multiple parts of name happen to match same segment
 				}
 			}
 		}
@@ -132,4 +139,4 @@ const filter = () => {
 
 
 let input = document.querySelector("input");
-input.addEventListener("keyup", filter);
+input.addEventListener("keyup", intializeFilter);
