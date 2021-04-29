@@ -4,6 +4,18 @@ let oper;
 let result;
 let prevOper;
 
+window.addEventListener("keydown", sendKeyCode);
+
+function sendKeyCode(event) {
+	if (/[\d\.]/.test(event.key)) {
+		number(event.key);
+	} else if (/[\+\-\*\/]/.test(event.key)) {
+		operator(event.key);
+	} else if (event.key === "Enter") {
+		equal();
+	}
+}
+
 function display(string) {
 	document.getElementById("display").textContent = string;
 }

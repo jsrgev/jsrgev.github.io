@@ -17,7 +17,7 @@ body {
 	font-family: Rubik, sans-serif;
 }
 
-aside, h1 {
+aside, h1, .fixer {
 	font-size: 2rem;
 	font-weight: 500;
 }
@@ -27,8 +27,8 @@ aside h1 span:first-child {
 }
 
 aside h1 span:last-child {
-	/*color:#fff;*/
-	/*filter:difference;*/
+	color:#fff;
+	filter:difference;
 }
 
 
@@ -66,7 +66,7 @@ aside ul {
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr;
-	gap:1rem;
+	gap:1.5rem;
 }
 aside a {
 	text-decoration: none;
@@ -145,6 +145,32 @@ header:before {
 	background-size: cover;
 	background-attachment:fixed;
 	background-clip: padding-box;
+}
+
+.sticky {
+	position: sticky;
+	display: block;
+	height:50px;
+    width: max-content;
+    top: 2rem;
+    margin-left: -17rem;
+    color: #fff;
+}
+
+.fixer span {
+	color:transparent;
+}
+
+.fixer {
+	position: sticky;
+	/*display: block;*/
+	height:50px;
+    width: 200px;
+    top: 0;
+    margin-top: -2rem;
+    margin-left: -17rem;
+    background-color: black;
+    color:gray;
 }
 
 section {

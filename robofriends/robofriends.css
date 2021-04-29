@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Train+One&display=swap');
+
+
+html {
+	font-size:16px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url("images/circuits.jpg") repeat fixed;
+    font-family: 'Rubik', sans-serif;
+    font-weight:300;
+}
+
+header, div {
+	box-shadow: 5px 5px 4px #808080cc, -5px -5px 4px #ffffffcc;
+	backdrop-filter:blur(3px);	
+}
+
+header {
+	background-color: #2bffbac7;
+	padding:1rem 2rem;
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap:1rem;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+h1 {
+	font-size: 1.4rem;
+	display: inline-block;
+	margin:0;
+    font-family: 'Train One';
+    text-transform: uppercase;
+}
+
+input {
+	height: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+	padding:2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+	gap:2rem;
+}
+
+div {
+	background:#722bffc7;
+	padding:1rem;
+	border-radius: 10px;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight:400;
+}
+
+
+img {
+	width:100%;
+	border-radius: 50%;
+    background: #d0feff45;
+}
+
+p {
+    font-size:.8rem;
+}
+
+
+
