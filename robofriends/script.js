@@ -104,7 +104,7 @@ const filter = () => {
   for (robot of robots) {
     let array = robot.name.split(" ");
     for (item of array) {
-      if (item.toLowerCase().search(input.value) === 0) {
+      if (item.toLowerCase().search(input.value.toLowerCase()) === 0) {
        createDiv(robot);
        break;
       }
