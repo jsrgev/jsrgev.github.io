@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: url("images/circuits.jpg") repeat fixed;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', calibri, sans-serif;
     font-weight:300;
 }
 
@@ -19,7 +19,7 @@ header, div {
 }
 
 header {
-	background-color: #2bffbac7;
+	background-color: #29e0a4c7;
 	padding:1rem 2rem;
 	display: grid;
 	grid-template-columns: max-content 1fr;
@@ -71,6 +71,7 @@ img {
 
 p {
     font-size:.8rem;
+    margin-bottom: 0;
 }
 
 
