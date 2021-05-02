@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 
 :root {
 	/*--turquoise: #00C8DC;*/
-	--turquoise: #33D4D1;
+	--turquoise: #00C8DC;
 	--blue: #5E90FF;
 	/*--color: r3: #6242ED;*/
 	--gray: #E6E6E6;
@@ -15,9 +16,11 @@
 
 body {
 	font-family: Rubik, sans-serif;
+	/*font-family: 'liibre Baskerville', serif;*/
 }
 
 aside, h1, .fixer {
+	font-family: Rubik, sans-serif;
 	font-size: 2rem;
 	font-weight: 500;
 }
@@ -27,8 +30,8 @@ aside h1 span:first-child {
 }
 
 aside h1 span:last-child {
-	color:#fff;
-	filter:difference;
+	/*color:#7a7e86;*/
+	/*filter:difference;*/
 }
 
 
@@ -49,6 +52,7 @@ aside {
 
 aside p, h1 {
 	margin-top: 0;
+	color: #7a7e86;
 }
 
 aside h1, aside li, aside div a {
@@ -102,7 +106,7 @@ li:active {
 .icons a {
 	color: var(--turquoise);
 	transition: all .3s;
-
+  /*animation: spin 1s linear infinite;*/
 }
 
 a:hover {
@@ -124,12 +128,21 @@ main {
 	/*margin-left: 300px;*/
 	background-color: transparent;
 	background-clip: border-box;
+	gap:2rem;
 }
 
 
 header {
 	position: relative;
-	height:100vh;
+	height:calc(100vh - 4rem);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border:100px solid black;*/
+	box-sizing: border-box;
+	font-size: 4rem;
+	color: #7a7e86;
+
 }
 
 header:before {
@@ -139,12 +152,91 @@ header:before {
 	width:100vw;
 	left:-20rem;
 	top:-2rem;
-	background-image: url('sky.jpg');
+	background-image: url('images/owens.jpg');
 	background-repeat: no-repeat;
 	/*background-position: 50% 0;*/
 	background-size: cover;
 	background-attachment:fixed;
 	background-clip: padding-box;
+
+}
+
+#circle1, #circle2 {
+	position:absolute;
+	/*background-color: #EDE712;*/
+	border-radius: 50%;
+	z-index: -10;
+}
+
+#circle1 {
+	height: 100px;
+	width: 100px;
+	border: 10px solid #EDE712;
+	left:-10px;
+	top:40%;
+}
+
+#circle2 {
+	height: 90px;
+	width: 90px;
+	border: 10px solid #EDE712;
+	left:-30px;
+	top:45%;
+	transition: all 1s ease;
+}
+
+#circle2:hover {
+	transform: scale(4);
+	border: 15px solid #EDE712;
+}
+
+
+header span {
+	font-weight: 600;
+	font-size: 5.02rem;
+	/*text-shadow: 1px 1px 0px #fff, 2px 2px 0px rgba(0,0,0,0.15);*/
+	background:
+		repeating-linear-gradient(90deg,
+		#5E90FF 0 4%,
+		#00C8DC 13% 17%,
+		#5E90FF 25%
+		/*transparent 20px 100px*/
+		);
+    animation: animatedBackground 30s linear infinite;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -1000px 0; }
+}
+@-moz-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
+}
+@-webkit-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
+}
+@-ms-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
+}
+@-o-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: -300px 0; }
+}
+
+
+.name {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,1fr);
+	color:#fff;
+	font-size:2rem;
+	font-family: Rubik, sans-serif;
 }
 
 .sticky {
@@ -175,6 +267,19 @@ header:before {
 
 section {
 	/*background-color: #fefefe;*/
+}
+
+#portfolio>div {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 250px);
+	gap:1rem;
+}
+
+#portfolio>div>div {
+	text-align: center;
+}
+#portfolio img {
+	height: 200px;
 }
 
 form {
@@ -244,4 +349,13 @@ button:active {
 
 textarea {
 	resize: vertical;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }

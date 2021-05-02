@@ -36,6 +36,13 @@ h1 span {
 	-webkit-text-fill-color: transparent;
 }
 
+#wrapper {
+	display: grid;
+	grid-template-columns: minmax(200px,600px);
+	justify-content: center;
+	margin:0 auto;
+}
+
 ul {
 	list-style-type: none;
 	padding:0;
@@ -65,10 +72,16 @@ input:focus {
 }
 
 button {
-	margin:auto;
+	display: block;
+	margin:2rem auto 0;
+	/*border-radius: 10px;*/
 }
 
 #story {
 	/*display: block;*/
 	margin-top: 1.5rem;
+}
+
+#story p {
+	text-indent: 3em;
 }

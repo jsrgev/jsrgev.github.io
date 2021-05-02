@@ -4,7 +4,17 @@ html {
 
 body {
 	margin:3rem;
-	background-image: linear-gradient(15deg, #dedd92ab, #ffd9b9e0 20% 20%, #7d9bcdcc 50% 70%, #afe7f6ba 100%);
+	background-image:
+	linear-gradient(195deg,
+		#abecf5 10px,
+		#f5ebf2 200px,
+		transparent 330px),
+	linear-gradient(352deg,
+		#fff 50px,
+		transparent 360px),
+	linear-gradient(45deg,
+		#bff8ff 213px,
+		transparent 700px);
 	height:calc(100vh - 6rem);
 } 
 
@@ -23,7 +33,7 @@ main {
 	width: min-content;
 	grid-template-columns: repeat(4,65px);
 	gap: 8px;
-	background-image: linear-gradient(45deg, #00acff17, #ffffffdb, #8de89326);
+	background-image: linear-gradient(156deg, #92c9e41c, #a3b7b736, #e0e6e633);
 	padding:20px;
     border-radius: 5px;
     box-shadow: inset 5px 5px rgba(236,234,235,.6), inset -5px -5px rgba(180,180,180,.6);
@@ -34,16 +44,20 @@ button, #display {
 	height:65px;
 	border:0;
 	box-sizing: border-box;
+	outline:none;
 }
 
 #display {
 	grid-column: span 4;
 	background:#c8f5c38a;
+    background: #29b4ffe8;
+    color: #fff;
 	padding:10px;
 	font-size: 2.1rem;
 	display: flex;
 	align-items: flex-end;
 	justify-content: flex-end;
+    overflow: hidden;
     box-shadow: inset 5px 5px rgba(180,180,180,.6), inset -5px -5px rgba(236,234,235,.6);
 }
 
@@ -64,13 +78,9 @@ button:active {
 }
 
 .operator {
-	background-color:#FFDA6B;
+    background-color: #d0d0d0e8;
 }
 
-.other {
-	background-color:#FFAD85;
-}
-
-#equals {
-    background-color: #87bdff;
+.other, #equals {
+    background-color: #f9f323e8;
 }
